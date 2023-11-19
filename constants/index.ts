@@ -1,0 +1,15 @@
+export const headerNames = [
+  "EEID",
+  "Full Name",
+  "Job Title",
+  "Department",
+  "Business Unit",
+  "Gender",
+  "Ethnicity",
+  "Age",
+  "Hire Date",
+  "Annual Salary",
+  "Bonus Percentage",
+  "Country",
+  "City",
+];

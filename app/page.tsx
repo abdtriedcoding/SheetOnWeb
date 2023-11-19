@@ -1,4 +1,5 @@
 import { google } from "googleapis";
+import Table from "./components/Table";
 
 const HomePage = async () => {
   // Authenticate with Google Sheets API
@@ -38,21 +39,10 @@ const HomePage = async () => {
     };
   });
 
-  console.log(transformedData);
-
   return (
-    <>
-      <div className="text-4xl text-center bg-yellow-300 p-4">
-        Let's start building🔥
-      </div>
-
-      {/* Display raw data (temporary for debugging) */}
-      {posts?.map((v: any, i: number) => (
-        <li key={i}>
-          <p>{v}</p>
-        </li>
-      ))}
-    </>
+    <div className="pt-4">
+      <Table transformedData={transformedData} />
+    </div>
   );
 };
 
