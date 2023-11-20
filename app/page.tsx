@@ -48,8 +48,8 @@ const HomePage = async () => {
           </p>
         </div>
       </div>
-      
-      <div className="container mx-auto py-10">
+
+      <div className="container mx-auto py-10 space-y-3">
         <DataTable columns={columns} data={data} />
       </div>
     </>

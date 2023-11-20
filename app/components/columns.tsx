@@ -1,6 +1,8 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
+import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 
 export type Payment = {
   eeid: string;
@@ -49,7 +51,17 @@ export const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "age",
-    header: "Age",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Age
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      );
+    },
   },
   {
     accessorKey: "hireDate",
@@ -57,7 +69,17 @@ export const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "annualSalary",
-    header: "Annual Salary",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Annual Salary
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      );
+    },
   },
   {
     accessorKey: "bonusPercentage",
