@@ -3,14 +3,6 @@ import { headerNames } from "@/constants";
 const Table = ({ transformedData }: any) => {
   return (
     <>
-      <div className="sm:flex sm:items-center px-4 lg:px-8">
-        <div className="sm:flex-auto pt-4">
-          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
-          <p className="mt-2 text-sm text-gray-700">
-            A list of all the users including their deatils.
-          </p>
-        </div>
-      </div>
       <div className="mt-8 flex flex-col px-4 sm:px-6 lg:px-8">
         <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle px-4 lg:px-8">

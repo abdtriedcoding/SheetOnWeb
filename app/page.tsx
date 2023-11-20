@@ -41,6 +41,14 @@ const HomePage = async () => {
 
   return (
     <>
+      <div className="sm:flex sm:items-center px-4 lg:px-8">
+        <div className="sm:flex-auto pt-4">
+          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            A list of all the users including their deatils.
+          </p>
+        </div>
+      </div>
       <Table transformedData={transformedData} />
     </>
   );
