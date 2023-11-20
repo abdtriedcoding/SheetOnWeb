@@ -20,7 +20,7 @@ const HomePage = async () => {
   const posts = response?.data?.values;
 
   // Transform the data into an array of objects
-  const transformedData = posts?.slice(0, 5)?.map((row) => {
+  const transformedData = posts?.slice(0, 50)?.map((row) => {
     return {
       EEID: row[0] || "",
       fullName: row[1] || "",
@@ -40,9 +40,9 @@ const HomePage = async () => {
   });
 
   return (
-    <div className="pt-4">
+    <>
       <Table transformedData={transformedData} />
-    </div>
+    </>
   );
 };
 
