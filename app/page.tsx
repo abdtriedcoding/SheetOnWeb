@@ -1,5 +1,6 @@
 import { google } from "googleapis";
-import Table from "./components/Table";
+import { columns } from "./components/columns";
+import { DataTable } from "./components/data-table";
 
 const HomePage = async () => {
   // Authenticate with Google Sheets API
@@ -17,12 +18,11 @@ const HomePage = async () => {
   });
 
   // Extract values from the response
-  const posts = response?.data?.values;
+  const posts = response?.data?.values!;
 
-  // Transform the data into an array of objects
-  const transformedData = posts?.slice(0, 50)?.map((row) => {
+  const data: any[] = posts?.slice(0, 50)?.map((row) => {
     return {
-      EEID: row[0] || "",
+      eeid: row[0] || "",
       fullName: row[1] || "",
       jobTitle: row[2] || "",
       department: row[3] || "",
@@ -35,7 +35,6 @@ const HomePage = async () => {
       bonusPercentage: row[10] || "",
       country: row[11] || "",
       city: row[12] || "",
-      exitDate: row[13] || "",
     };
   });
 
@@ -49,7 +48,10 @@ const HomePage = async () => {
           </p>
         </div>
       </div>
-      <Table transformedData={transformedData} />
+      
+      <div className="container mx-auto py-10">
+        <DataTable columns={columns} data={data} />
+      </div>
     </>
   );
 };
