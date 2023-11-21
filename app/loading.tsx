@@ -8,12 +8,14 @@ const loading = () => {
         </div>
       </div>
 
+      <div className="mt-14">
       {[...Array(10)].map((_, index) => (
         <div
           key={index}
-          className="animate-pulse h-10 bg-gray-200 rounded mb-2"
+          className="animate-pulse h-14 bg-gray-200 rounded mb-2"
         ></div>
       ))}
+      </div>
     </div>
   );
 };
