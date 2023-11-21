@@ -56,6 +56,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <>
+      {/* Search Input */}
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter By Name..."
@@ -69,6 +70,7 @@ export function DataTable<TData, TValue>({
         />
       </div>
 
+      {/* Tabel */}
       <div className="rounded-md border">
         <Table>
           <TableHeader>
@@ -117,6 +119,7 @@ export function DataTable<TData, TValue>({
         </Table>
       </div>
 
+      {/* Pagination */}
       <div className="flex items-center justify-end space-x-2 py-4">
         <Button
           variant="outline"

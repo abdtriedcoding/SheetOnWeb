@@ -2,25 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, MoreHorizontal } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 
-export type Payment = {
-  eeid: string;
-  fullName: string;
-  jobTitle: string;
-  department: string;
-  businessUnit: string;
-  gender: string;
-  ethnicity: string;
-  age: number;
-  hireDate: string;
-  annualSalary: number;
-  bonusPercentage: number;
-  country: string;
-  city: string;
-};
-
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<EmployeeData>[] = [
   {
     accessorKey: "eeid",
     header: "EEID",

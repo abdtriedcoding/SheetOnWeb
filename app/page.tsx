@@ -14,13 +14,14 @@ const HomePage = async () => {
   // Fetch data from the specified Google Sheet
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.SHEET_ID,
-    range: "Sheet1!A2:N",
+    range: "Sheet1!A2:M",
   });
 
   // Extract values from the response
-  const posts = response?.data?.values!;
+  const excelData = response?.data?.values!;
 
-  const data: any[] = posts?.slice(0, 50)?.map((row) => {
+  // Transform the excelData in to required data structure
+  const data: EmployeeData[] = excelData?.slice(0, 50)?.map((row) => {
     return {
       eeid: row[0] || "",
       fullName: row[1] || "",
