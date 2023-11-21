@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ weight: "500", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Data Visualization Dashboard",
+  title: "Employee Information Dashboard",
   description:
-    "Explore the power of data with our cool and interactive Visualization Dashboard. Gain insights, make informed decisions, and turn your data into a story of success!",
+    "Explore employee data with our interactive dashboard. Gain insights into your workforce, make informed decisions, and optimize your company's performance.",
 };
 
 export default function RootLayout({

@@ -40,7 +40,7 @@ const HomePage = async () => {
 
   return (
     <>
-      <div className="sm:flex sm:items-center px-4 lg:px-8">
+      <div className="sm:flex sm:items-center container">
         <div className="sm:flex-auto pt-4">
           <h1 className="text-xl font-semibold text-gray-900">Users</h1>
           <p className="mt-2 text-sm text-gray-700">
@@ -49,7 +49,7 @@ const HomePage = async () => {
         </div>
       </div>
 
-      <div className="container mx-auto py-10 space-y-3">
+      <div className="container mx-auto py-4 space-y-3">
         <DataTable columns={columns} data={data} />
       </div>
     </>
