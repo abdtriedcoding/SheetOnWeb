@@ -2,6 +2,7 @@ import { google } from "googleapis";
 import { columns } from "./components/columns";
 import { DataTable } from "./components/data-table";
 import { ToggleTheme } from "./components/toggle-theme";
+import BarChart from "./components/bar-chart";
 
 const HomePage = async () => {
   // Authenticate with Google Sheets API
@@ -52,9 +53,9 @@ const HomePage = async () => {
         <ToggleTheme />
       </div>
 
-      <div className="container mx-auto py-4 space-y-3">
-        <DataTable columns={columns} data={data} />
-      </div>
+      <DataTable columns={columns} data={data} />
+
+      <BarChart data={data} />
     </>
   );
 };
