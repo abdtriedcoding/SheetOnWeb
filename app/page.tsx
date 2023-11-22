@@ -1,6 +1,7 @@
 import { google } from "googleapis";
 import { columns } from "./components/columns";
 import { DataTable } from "./components/data-table";
+import { ToggleTheme } from "./components/toggle-theme";
 
 const HomePage = async () => {
   // Authenticate with Google Sheets API
@@ -41,13 +42,14 @@ const HomePage = async () => {
 
   return (
     <>
-      <div className="sm:flex sm:items-center container">
-        <div className="sm:flex-auto pt-4">
-          <h1 className="text-xl font-semibold text-gray-900">Users</h1>
-          <p className="mt-2 text-sm text-gray-700">
-            A list of all the users including their deatils.
+      <div className="flex justify-between container pt-4">
+        <div>
+          <h1 className="text-xl font-semibold">Users</h1>
+          <p className="mt-2 text-sm">
+            A list of all users including their details.
           </p>
         </div>
+        <ToggleTheme />
       </div>
 
       <div className="container mx-auto py-4 space-y-3">
