@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SheetOnWeb - Empowering Web Data Display with Google Sheets Integration.
 
-## Getting Started
+Built with the Next.js 14 App Router, Google Sheet API, TypeScript, Shadcn UI & Tailwind
 
-First, run the development server:
+![Project Image](https://github.com/sidd-abdullah/SheetOnWeb/blob/main/public/thumbnail.png)
+
+## Features
+
+- 🛠️ Complete solution to showcase Google Sheets data in website
+- 💻 User-friendly interface with beautiful table displays
+- 🏬 Using Google Sheet as database
+- 🔄 Real-time updates directly from Google Sheets
+- 🔍 Full pagination & sortable data (age, salary)
+- 📊 Dynamic bar chart for visual insights
+- 🌐 Accessible to non-technical users
+- ⚙️ Easily contribute data without technical expertise
+- 🔄 Automatic data fetching and display
+- 🚀 Enhance team understanding with visual representations
+- 📈 100% built for ease and clarity
+
+## Getting started
+
+To get started with this project, run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/sidd-abdullah/SheetOnWeb.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+and make the .env.example variables into a separate .env.local file, fill them out by making account on Google Cloud Platform & and that's all you need to get started!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For more setup details you can watch this vedio.👉 https://youtu.be/K6Vcfm7TA5U?si=GrJ1joK5pl0Tv9Kd
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Acknowledgements
 
-To learn more about Next.js, take a look at the following resources:
+- [Fireship](https://youtu.be/K6Vcfm7TA5U?si=GrJ1joK5pl0Tv9Kd) for making this project possible by his vedio😉
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
