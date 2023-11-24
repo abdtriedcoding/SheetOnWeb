@@ -1,15 +1,11 @@
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { constructMetadata } from "@/lib/utils";
 
-const inter = Montserrat({ weight: "500", subsets: ["latin"] });
+const font = Outfit({ weight: "500", subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Employee Information Dashboard",
-  description:
-    "Explore employee data with our interactive dashboard. Gain insights into your workforce, make informed decisions, and optimize your company's performance.",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
@@ -19,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={inter.className}>
+      <body className={font.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
