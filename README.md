@@ -26,7 +26,11 @@ To get started with this project, run
   git clone https://github.com/sidd-abdullah/SheetOnWeb.git
 ```
 
-and make the .env.example variables into a separate .env.local file, fill them out by making account on Google Cloud Platform & and that's all you need to get started!
+and make the .env.example variables into a separate .env.local file, fill them out by making account on Google Cloud Platform & and that's all you need to get started! 
+
+By the i am using this google sheet for display data https://docs.google.com/spreadsheets/d/1WXYyIg6qmNtQZxfzD5Wv8pD6rnpcJLTUdXXSGsi2FyQ/edit?usp=sharing. 
+
+You can use according to your requirments. For new sheet you need to change a little bit of code you can do it by taking refrence from fireship vedio.
 
 For more setup details you can watch this vedio.👉 https://youtu.be/K6Vcfm7TA5U?si=GrJ1joK5pl0Tv9Kd
 
